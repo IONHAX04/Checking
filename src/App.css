@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth !important;
+    background-color: black;
+    color: white;
+    /* font-family: "OpenSans-Bold"; */
+    font-family: Inter ,sans-serif !important;
+    /* font-family: "Calligraffitti", cursive; */
+    /* font-family: "Ojuju", sans-serif; */
+}
+
+body{
+    margin-top: 0;
+}
+
+:root {
+    --mainColor: black;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}

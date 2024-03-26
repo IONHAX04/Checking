@@ -1,0 +1,104 @@
+.followMe, .queriesInfo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.queriesInfo{
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+}
+
+
+.footerContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerCont{
+    padding: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footefooterContrContent h5{
+    text-align: center;
+}
+.bottom{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.texts{
+    background-color: white;
+    margin-top: 10px;
+}
+.texts p{
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    margin-left: 4px;
+}
+.queriesInfo input{
+    width: 80%;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.footer-follow{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer-follow img{
+    margin: 1px 4px;
+    background-color: transparent;
+}
+
+.footer{
+    display: flex;
+    margin: 0;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+    }
+    .contact{
+        margin: 5px 20px 15px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+closeButton{
+    color: white;
+}
+
+.btn-close{
+    background-color: rgba(255, 255, 255, 0.694);
+}

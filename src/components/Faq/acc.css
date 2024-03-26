@@ -1,0 +1,24 @@
+.faq{
+    width: 50%;
+    margin: auto;
+}
+
+
+.accordian_box{
+    padding: 1rem 2rem;
+    background-color: white;
+    border: 1.5px solid blueviolet;
+    margin-bottom: 2rem;
+    border-radius: 9px;
+    text-align: left;
+}
+
+
+.ques-icon-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.ques-ans-div{
+    color: white;
+}

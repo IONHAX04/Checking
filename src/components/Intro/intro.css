@@ -1,0 +1,196 @@
+.introPage {
+    text-align: center;
+    color: white;
+    margin: 25px 100px;
+}
+
+.animated_card {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 350px;
+    width: 250px;
+    background: #222;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.spanCard {
+    color: rgba(254, 254, 254, 0.1);
+    font-size: 10em;
+    z-index: -1;
+}
+
+
+.contents {
+    margin: 100px;
+}
+
+.contents p {
+    font-family: "Catamaran", sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+.animated_card {
+    overflow: hidden;
+    background: transparent;
+}
+
+.animated_card::before {
+    position: absolute;
+    content: '';
+    height: 180%;
+    width: 50%;
+    background: #ffffff;
+    transform: rotate(45deg);
+}
+
+.animated_card:hover::before {
+    transition: 0.2s ease-in-out;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animated_card::after {
+    position: absolute;
+    content: '';
+    inset: 5px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+
+.cardsIntro {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: black;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: black;
+}
+
+.inputBox button {
+    width: 70px;
+    height: 40px;
+    border-radius: 10cpx;
+    border: 1px solid white;
+}
+
+
+@media screen and (max-width: 800px) {
+    .cardsIntro {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .animated_card {
+        margin: 10px;
+    }
+
+    .introPage {
+        margin: 10px;
+    }
+
+    .introPage p {
+        font-size: 12px;
+    }
+
+    .queriesinfo input {
+        width: 90%;
+    }
+}
+
+.queries {
+    padding: 30px;
+}
+
+.queries p {
+    font-size: 30px;
+}
+
+.queriesinfo input {
+    width: 50%;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.cardintro {
+    /* box-shadow: rgba(243, 243, 243, 0.466) 4.4px 4.4px; */
+    height: 24rem;
+    box-shadow: white;
+    width: 17rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* .cardintro:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+} */
+
+.buttons {
+    justify-content: space-around;
+    display: flex;
+    margin-top: -48px;
+}
+
+.buttons a {
+    background: transparent;
+}
+
+.shadow-button {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 8px;
+    box-shadow: rgba(243, 243, 243, 0.466) 4.4px 3.4px;
+}
+
+.shadow-button:hover{
+    background-color: white;
+    color: black;
+}
