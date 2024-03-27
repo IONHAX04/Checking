@@ -33,7 +33,7 @@ function App() {
       <Element name="introPage">
         <Intro />
       </Element>
-      <Element name='activities'>
+      <Element name='activities' id='activities'>
         <Activities />
       </Element>
       <Faq />

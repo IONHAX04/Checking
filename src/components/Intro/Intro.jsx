@@ -15,10 +15,18 @@ export default function Intro() {
 
 
     const scrollToIntro = () => {
-        const introSection = document.getElementById('slide2');
+        const introSection = document.getElementById('activities');
+        console.log("introSection", introSection)
         if (introSection) {
+            console.log("If");
             introSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-            window.scrollBy(0, 1550);
+            if (window.innerWidth <= 800) {
+                console.log("IF part")
+                window.scrollBy(0, 3800);
+            } else {
+                console.log("Else")
+                window.scrollBy(0, 1450);
+            }
         }
     };
 
