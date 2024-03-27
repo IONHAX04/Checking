@@ -19,7 +19,7 @@ export default function Header() {
     const activitiesSection = document.getElementById('activities');
     if (activitiesSection) {
       activitiesSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-      window.scrollBy(0, -100);
+      window.scrollBy(0, 800);
       showNavbar();
     }
   };
@@ -46,6 +46,7 @@ export default function Header() {
           <FaBars />
         </button>
       </header>
+
     </>
   );
 }

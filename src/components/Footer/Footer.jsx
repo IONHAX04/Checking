@@ -33,15 +33,17 @@ export default function Footer() {
 
                     <div className="contactInfo row">
                         <div className="col-lg-3 col-6 mb-4">
-                            <div className="footer-follow">
-                                <img src={twitter} height='30px' width='30px' />
-                                <div className="texts">
-                                    <p>Follow Me On <br />Twitter</p>
+                            <a href='https://twitter.com/subu_thetrader' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                                <div className="footer-follow">
+                                    <img src={twitter} height='30px' width='30px' />
+                                    <div className="texts">
+                                        <p>Follow Me On <br />Twitter</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div className="col-lg-3 col-6 mb-4">
-                            <a href='https://www.instagram.com/traintotrade_t2t/' style={{ textDecoration: 'none' }}>
+                            <a href='https://www.instagram.com/traintotrade_t2t/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                                 <div className="footer-follow">
                                     <img src={insta} height='30px' width='30px' />
                                     <div className="texts">
@@ -51,7 +53,7 @@ export default function Footer() {
                             </a>
                         </div>
                         <div className="col-lg-3 col-6 mb-4">
-                            <a href='https://www.youtube.com/channel/UCuvzF0q40j9N51QHGCZvvHA' style={{ textDecoration: 'none' }}>
+                            <a href='https://www.youtube.com/channel/UCuvzF0q40j9N51QHGCZvvHA' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                                 <div className="footer-follow">
                                     <img src={youtube} height='30px' width='30px' />
                                     <div className="texts">
@@ -61,12 +63,14 @@ export default function Footer() {
                             </a>
                         </div>
                         <div className="col-lg-3 col-6 mb-4">
-                            <div className="footer-follow">
-                                <img src={telegram} height='30px' width='30px' />
-                                <div className="texts">
-                                    <p>Follow Me On <br />Telegram</p>
+                            <a href='https://chat.whatsapp.com/EDdkBcLGGMI0gUC9QPPLWl' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                                <div className="footer-follow">
+                                    <img src={telegram} height='30px' width='30px' />
+                                    <div className="texts">
+                                        <p>Follow Me On <br />Telegram</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

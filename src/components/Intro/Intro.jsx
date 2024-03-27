@@ -14,6 +14,14 @@ import img3 from '../../assets/intro/15.png'
 export default function Intro() {
 
 
+    const scrollToIntro = () => {
+        const introSection = document.getElementById('slide2');
+        if (introSection) {
+            introSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+            window.scrollBy(0, 1550);
+        }
+    };
+
     return (
         <div className="introPage" id='introPage' data-aos="zoom-in-up" data-aos-delay="0">
             <p className='introText1' style={{ margin: '20px', fontSize: '30px' }}>
@@ -41,7 +49,7 @@ export default function Intro() {
                             borderRadius: '14px'
                         }} />
                     <div className="buttons">
-                        <a href='#slide2'><button className='btn btn-light shadow-button'>View Course</button></a>
+                        <button className='btn btn-light shadow-button' onClick={scrollToIntro}>View Course</button>
                         <a href="https://wa.me/+919025715007/?text=I'm Interested in course - Personal Finance Mentoring" target="_blank"><button className='btn btn-light shadow-button'>Buy Now</button></a>
                     </div>
                 </div>
@@ -55,7 +63,7 @@ export default function Intro() {
                             borderRadius: '14px'
                         }} />
                     <div className="buttons">
-                        <a href='#slide1'><button className='btn btn-light shadow-button' >View Course</button></a>
+                        <button className='btn btn-light shadow-button' onClick={scrollToIntro}>View Course</button>
                         <a href="https://wa.me/+919025715007/?text=I'm Interested in course - Swing Trading" target="_blank"><button className='btn btn-light shadow-button'>Buy Now</button></a>
                     </div>
                 </div>
@@ -69,7 +77,7 @@ export default function Intro() {
                             borderRadius: '14px'
                         }} />
                     <div className="buttons">
-                        <a href='#slide3'><button className='btn btn-light shadow-button'>View Course</button></a>
+                        <button className='btn btn-light shadow-button' onClick={scrollToIntro}>View Course</button>
                         <a href="https://wa.me/+919025715007/?text=I'm Interested in course - Trading Mentorship (1 On 1)" target="_blank"><button className='btn btn-light shadow-button'>Buy Now</button></a>
                     </div>
                 </div>

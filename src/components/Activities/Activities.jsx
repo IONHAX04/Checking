@@ -56,26 +56,6 @@ export default function Activities() {
                 <p style={{ fontSize: '32px' }}>Catch my activities on</p>
                 <div className="cardActivities">
                     <div className="cardIntro">
-                        <img src={socialYoutube}
-                            style={{
-                                objectFit: 'fill',
-                                height: '240px',
-                                width: '270px',
-                                borderTopLeftRadius: '12px',
-                                borderTopRightRadius: '12px'
-                            }} />
-                        <div className="contacts">
-                            <img src={youtubes}
-                                height='30px'
-                                width='30px'
-                                style={{
-                                    background: '#222'
-                                }} />
-                            <p style={{ fontSize: '24px', paddingTop: '14px', paddingLeft: '10px' }}>Youtube</p>
-                        </div>
-                        <button className='button'>Millionaire Trader</button>
-                    </div>
-                    <div className="cardIntro">
                         <img src={socialtwitter}
                             style={{
                                 objectFit: 'cover',
@@ -93,7 +73,7 @@ export default function Activities() {
                                 }} />
                             <p style={{ fontSize: '24px', paddingTop: '14px', paddingLeft: '10px' }}>Twitter</p>
                         </div>
-                        <button className='button'>Explore More</button>
+                        <a href="https://twitter.com/subu_thetrader" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
                     </div>
                     <div className="cardIntro">
                         <img src={socialInsta}
@@ -113,7 +93,27 @@ export default function Activities() {
                                 }} />
                             <p style={{ fontSize: '24px', paddingTop: '14px', paddingLeft: '10px' }}>Instagram</p>
                         </div>
-                        <button className='button'>Explore More</button>
+                        <a href="https://www.instagram.com/traintotrade_t2t/" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
+                    </div>
+                    <div className="cardIntro">
+                        <img src={socialYoutube}
+                            style={{
+                                objectFit: 'fill',
+                                height: '240px',
+                                width: '270px',
+                                borderTopLeftRadius: '12px',
+                                borderTopRightRadius: '12px'
+                            }} />
+                        <div className="contacts">
+                            <img src={youtubes}
+                                height='30px'
+                                width='30px'
+                                style={{
+                                    background: '#222'
+                                }} />
+                            <p style={{ fontSize: '24px', paddingTop: '14px', paddingLeft: '10px' }}>Youtube</p>
+                        </div>
+                        <a href="https://www.youtube.com/channel/UCuvzF0q40j9N51QHGCZvvHA" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
                     </div>
                     <div className="cardIntro">
                         <img src={socialTele}
@@ -124,7 +124,7 @@ export default function Activities() {
                                 borderTopLeftRadius: '12px',
                                 borderTopRightRadius: '12px'
                             }} />
-                        <div className="contacts">
+                        <div className="contacts" id='telegram'>
                             <img src={telegram}
                                 height='30px'
                                 width='30px'
@@ -133,12 +133,12 @@ export default function Activities() {
                                 }} />
                             <p style={{ fontSize: '24px', paddingTop: '14px', paddingLeft: '10px' }}>Telegram</p>
                         </div>
-                        <button className='button'>Explore More</button>
+                        <a href="https://twitter.com/yourTwitterHandle" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
                     </div>
                 </div>
             </div>
 
-            <div className="carouselContainer d-md-none" data-aos="zoom-in-up" data-aos-delay="300">
+            <div className="carouselContainer d-md-none d-block" data-aos="zoom-in-up" data-aos-delay="300">
                 <div className="courses">
                     <Carousel activeIndex={index} onSelect={setIndex}>
                         <Carousel.Item>
@@ -170,7 +170,7 @@ export default function Activities() {
             </div>
 
 
-            <div className="slider d-none d-md-block" id='slider'>
+            <div className="slider d-md-block d-none" id='slider'>
                 <input type='radio' name='slide' id='s1' onClick={() => handleSlideClick(1)} checked={currentSlide === 1} />
                 <input type='radio' name='slide' id='s2' onClick={() => handleSlideClick(2)} checked={currentSlide === 2} />
                 <input type='radio' name='slide' id='s3' onClick={() => handleSlideClick(3)} checked={currentSlide === 3} />
