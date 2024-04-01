@@ -190,7 +190,14 @@
     box-shadow: rgba(243, 243, 243, 0.466) 4.4px 3.4px;
 }
 
-.shadow-button:hover{
+.buttons button{
+    transition: 0.4s;
+    transform: scale(1);
+}
+
+.buttons button:hover{
     background-color: white;
+    border: 0.5px solid rgb(63, 63, 63);
     color: black;
+    transform: scale(1.08);
 }

@@ -19,7 +19,7 @@ export default function Header() {
     const activitiesSection = document.getElementById('activities');
     if (activitiesSection) {
       activitiesSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-      window.scrollBy(0, 800);
+      window.scrollBy(0, 1000);
       showNavbar();
     }
   };
@@ -36,7 +36,7 @@ export default function Header() {
         </div>
         <nav ref={navRef}>
           <a href='#' onClick={scrollToIntro}>Home</a>
-          <a href='#activities' onClick={scrollToActivities}>Follow Me</a>
+          <a href='#' onClick={scrollToActivities}>Follow Me</a>
           <a href='https://chat.whatsapp.com/EDdkBcLGGMI0gUC9QPPLWl' target='_blank' rel='noopener noreferrer'>Contact</a>
           <button className='nav-btn nav-close' onClick={showNavbar}>
             <FaTimes />

@@ -29,7 +29,7 @@ export default function Footer() {
         <div className='footerContent'>
             <div className='footer'>
                 <div className="followMe" data-aos="flip-right" data-aos-delay="0">
-                    <p style={{ fontSize: '24px', marginTop: '20px' }}>Follow Me</p>
+                    <p style={{ fontSize: '22px', marginTop: '20px' }}>Follow Me</p>
 
                     <div className="contactInfo row">
                         <div className="col-lg-3 col-6 mb-4">
@@ -63,7 +63,7 @@ export default function Footer() {
                             </a>
                         </div>
                         <div className="col-lg-3 col-6 mb-4">
-                            <a href='https://chat.whatsapp.com/EDdkBcLGGMI0gUC9QPPLWl' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <a href='https://t.me/+AolXn1wGGd4zM2M1' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                                 <div className="footer-follow">
                                     <img src={telegram} height='30px' width='30px' />
                                     <div className="texts">
@@ -75,7 +75,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="queriesInfo" data-aos="flip-left" data-aos-delay="0">
-                    <p style={{ fontSize: '20px' }}>Deliver your thoughts to make more meaningful decisions in life</p>
+                    <p style={{ fontSize: '18px' }}>Deliver your thoughts to make more meaningful decisions in life</p>
                     <input placeholder='Enter your email address' />
                 </div>
 
@@ -85,13 +85,13 @@ export default function Footer() {
 
             <Row className='footerCont'>
                 <Col lg={6}>
-                    <h5>COPYRIGHT © 2024 - Train 2 Trade. All Rights Reserved.</h5>
+                    <h6>COPYRIGHT © 2024 - Train 2 Trade. All Rights Reserved.</h6>
                 </Col>
 
                 <Col lg={5}>
-                    <h5 variant="primary" onClick={handleShowTermsOfUse}>
+                    <h6 variant="primary" onClick={handleShowTermsOfUse}>
                         Terms Of Use
-                    </h5>
+                    </h6>
                     <Offcanvas show={showTermsOfUse} onHide={handleCloseTermsOfUse} backdrop="static">
                         <Offcanvas.Header closeButton >
                             <Offcanvas.Title>Disclaimer</Offcanvas.Title>

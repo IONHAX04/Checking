@@ -25,7 +25,7 @@ export default function Intro() {
                 window.scrollBy(0, 3800);
             } else {
                 console.log("Else")
-                window.scrollBy(0, 1450);
+                window.scrollBy(0, 1640);
             }
         }
     };
