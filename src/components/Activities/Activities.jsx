@@ -12,7 +12,7 @@ import insta from '../../assets/social/instagram.png'
 import twitter from '../../assets/social/twitter.png'
 import telegram from '../../assets/social/telegram.png'
 
-import socialTele from '../../assets/cards/1tele.png'
+import socialTele from '../../assets/cards/tele.jpeg'
 import socialtwitter from '../../assets/cards/1twitter.png'
 import socialYoutube from '../../assets/cards/youtube.png'
 import socialInsta from '../../assets/cards/insta.png'
@@ -51,16 +51,16 @@ export default function Activities() {
     }, [images.length, currentSlide]);
 
     return (
-        <div className="activityContent" id='activities'>
-            <div className='activities' data-aos="zoom-in-up" data-aos-delay="0">
-                <p style={{ fontSize: '32px' }}>Catch my activities on</p>
+        <div className="activityContent">
+            <div className='activities'>
+                <p style={{ fontSize: '28px', fontWeight: 'bold' }} data-aos="zoom-in-up" data-aos-delay="0">CONNECT WITH ME</p>
                 <div className="cardActivities">
-                    <div className="cardIntro">
+                    <div className="cardIntro" data-aos="fade-right" data-aos-delay="200">
                         <img src={socialtwitter}
                             style={{
                                 objectFit: 'cover',
                                 height: '240px',
-                                width: '270px',
+                                width: '268px',
                                 borderTopLeftRadius: '12px',
                                 borderTopRightRadius: '12px'
                             }} />
@@ -75,12 +75,12 @@ export default function Activities() {
                         </div>
                         <a href="https://twitter.com/subu_thetrader" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
                     </div>
-                    <div className="cardIntro">
+                    <div className="cardIntro" data-aos="fade-right" data-aos-delay="100">
                         <img src={socialInsta}
                             style={{
                                 objectFit: 'cover',
                                 height: '240px',
-                                width: '270px',
+                                width: '268px',
                                 borderTopLeftRadius: '12px',
                                 borderTopRightRadius: '12px'
                             }} />
@@ -95,12 +95,12 @@ export default function Activities() {
                         </div>
                         <a href="https://www.instagram.com/traintotrade_t2t/" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
                     </div>
-                    <div className="cardIntro">
+                    <div className="cardIntro" data-aos="fade-left" data-aos-delay="100">
                         <img src={socialYoutube}
                             style={{
                                 objectFit: 'fill',
                                 height: '240px',
-                                width: '270px',
+                                width: '268px',
                                 borderTopLeftRadius: '12px',
                                 borderTopRightRadius: '12px'
                             }} />
@@ -115,12 +115,12 @@ export default function Activities() {
                         </div>
                         <a href="https://www.youtube.com/channel/UCuvzF0q40j9N51QHGCZvvHA" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
                     </div>
-                    <div className="cardIntro">
+                    <div className="cardIntro" data-aos="fade-left" data-aos-delay="200">
                         <img src={socialTele}
                             style={{
                                 objectFit: 'fill',
                                 height: '240px',
-                                width: '270px',
+                                width: '268px',
                                 borderTopLeftRadius: '12px',
                                 borderTopRightRadius: '12px'
                             }} />
@@ -133,13 +133,14 @@ export default function Activities() {
                                 }} />
                             <p style={{ fontSize: '24px', paddingTop: '14px', paddingLeft: '10px' }}>Telegram</p>
                         </div>
-                        <a href="https://twitter.com/yourTwitterHandle" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
+                        <a href="https://t.me/+AolXn1wGGd4zM2M1" target="_blank" rel="noopener noreferrer" className='button'>Explore More</a>
                     </div>
                 </div>
             </div>
 
-            <div className="carouselContainer d-md-none d-block" data-aos="zoom-in-up" data-aos-delay="300">
+            <div className="carouselContainer d-md-none d-block" data-aos="flip-up" data-aos-delay="500">
                 <div className="courses">
+                    <p className="context" style={{ fontSize: '30px', fontWeight: 'bolder' }}>CONTEXT</p>
                     <Carousel activeIndex={index} onSelect={setIndex}>
                         <Carousel.Item>
                             <img
@@ -171,6 +172,8 @@ export default function Activities() {
 
 
             <div className="slider d-md-block d-none" id='slider'>
+                <p className="context" style={{ fontSize: '30px', fontWeight: 'bolder' }}>CONTEXT</p>
+
                 <input type='radio' name='slide' id='s1' onClick={() => handleSlideClick(1)} checked={currentSlide === 1} />
                 <input type='radio' name='slide' id='s2' onClick={() => handleSlideClick(2)} checked={currentSlide === 2} />
                 <input type='radio' name='slide' id='s3' onClick={() => handleSlideClick(3)} checked={currentSlide === 3} />
@@ -184,12 +187,7 @@ export default function Activities() {
                 <label htmlFor="s3" id='slide3' style={{ borderRadius: '20px' }} >
                     <img src={img3} style={{ borderRadius: '20px' }} className='cardImg' height='100%' width='100%' />
                 </label>
-
-                <div className="nav-btn next" onClick={handleNextClick}>&#10095;</div>
-                <div className="nav-btn prev" onClick={handlePrevClick}>&#10094;</div>
             </div>
-
-
         </div>
     );
 }

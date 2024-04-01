@@ -27,14 +27,16 @@
 }
 
 .carouselContainer {
+    margin-top: 20px;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .cardIntro {
+    /* box-shadow: rgb(242 241 241 / 30%) 4.4px 4.4px 3.2px; */
     height: 380px;
-    border: 1px solid rgb(41, 41, 41);
+    border: 1px solid rgb(138, 138, 138);
     width: 270px;
     background-color: #222;
     margin: 20px;
@@ -51,6 +53,7 @@
     margin-bottom: 50px;
     width: 650px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -123,8 +126,8 @@
     perspective: 1000px;
     transform-style: preserve-3d;
     background: transparent;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 70px;
+    margin-bottom: 80px;
 }
 
 #slider label {

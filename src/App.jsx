@@ -9,7 +9,7 @@ import { Element } from 'react-scroll';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
-import whatsApp from './assets/chat1.png';
+import whatsApp from './assets/img10.png';
 
 function App() {
   useEffect(() => {
@@ -38,9 +38,9 @@ function App() {
       </Element>
       <Faq />
       <Footer />
-      <div className="fixed-bottom right-100 p-3" style={{ zIndex: "6", left: "initial", background: 'white', borderRadius: '45%', margin: '20px' }}>
-        <a href='https://chat.whatsapp.com/EDdkBcLGGMI0gUC9QPPLWl' target='_blank'>
-          <img src={whatsApp} width="40" alt='WhatsApp' style={{ background: 'white' }} />
+      <div className="fixed-bottom right-100 p-3" style={{ zIndex: "6", left: "initial", margin: '20px', background: 'transparent'}}>
+        <a href='https://chat.whatsapp.com/EDdkBcLGGMI0gUC9QPPLWl' target='_blank' style={{background: 'transparent',  backdropFilter: 'blur 2rem'}}>
+          <img src={whatsApp} width="130" alt='WhatsApp' style={{background: 'transparent', filter: 'drop-shadow(10px 7px 10px violet)'}} />
         </a>
       </div>
     </>
